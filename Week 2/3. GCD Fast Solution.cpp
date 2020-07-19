@@ -1,4 +1,4 @@
-# include <cbits/stdc++.h>
+# include <bits/stdc++.h>
 using namespace std;
 long GCD(a, b) {
 	if (b == 0)
