@@ -1,9 +1,9 @@
 # include <bits/stdc++.h>
 using namespace std;
-long GCD(a, b) {
+long GCD(long a, long b) {
 	long best = 0;
-	for(long i =0 ;i < a + b ; i++) {
-		if(i/a == 0 && b/i == 0)
+	for(long i = 1 ;i < a + b ; i++) {
+		if(a % i == 0 && b % i == 0)
 			best = i;
 	}
 	return best;

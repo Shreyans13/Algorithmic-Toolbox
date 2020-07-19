@@ -1,9 +1,9 @@
 # include <bits/stdc++.h>
 using namespace std;
-long GCD(a, b) {
+long GCD(long a, long b) {
 	if (b == 0)
 		return a;
-	return GCD(b, a%b)
+	return GCD(b, a%b);
 }
 
 int main () {

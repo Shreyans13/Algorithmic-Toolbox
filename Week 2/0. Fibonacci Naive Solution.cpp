@@ -1,6 +1,6 @@
 # include <bits/stdc++.h>
 using namespace std;
-long FibRecurs(n) {
+long FibRecurs(long n) {
 	if (n <= 1)
 		return n;
 	else
@@ -8,7 +8,7 @@ long FibRecurs(n) {
 }
 
 int main () {
-	int n;
+	long n;
 	cin >> n;
 	cout << FibRecurs(n) << endl;
 }
