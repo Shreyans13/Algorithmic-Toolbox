@@ -2,13 +2,12 @@
 using namespace std;
 
 long FibRecurs(long n) {
-	vector<long> v(n);
+	long v[n] = {0};
 	v[0] = 0;
 	v[1] = 1;
 
 	for ( long i = 2 ;i <= n ;i++){
 		v[i] = v[i-1] + v[i-2];
-		cout << v[i]<<endl;
 	}
 
 	return v[n];
@@ -17,5 +16,9 @@ long FibRecurs(long n) {
 int main () {
 	long n;
 	cin >> n;
-	cout << FibRecurs(n) << endl;
+	if(n == 0){
+        cout << 0 << endl;
+	} else {
+        cout << FibRecurs(n) << endl;
+	}
 }
